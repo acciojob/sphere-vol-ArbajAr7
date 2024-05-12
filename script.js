@@ -10,8 +10,9 @@ function volume_sphere() {
 	{
 		document.getElementById("volume").setAttribute("value", "NaN");
 	}
-	const volume = (4/3)*Math.PI*radiusV*radiusV*radiusV;
+	const volume = ((4/3)*Math.PI*radiusV*radiusV*radiusV).toFixed(4);
 	document.getElementById("volume").setAttribute("value", volume);
+	return false;
 } 
 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
